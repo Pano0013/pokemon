@@ -1,11 +1,8 @@
 body {
-  background: rgb(85, 144, 189);
-  background: linear-gradient(
-    90deg,
-    rgb(189, 135, 85) 0%,
-    rgb(224, 166, 132) 54%,
-    rgb(245, 219, 202) 82%
-  );
+  background-image: url("https://fondosmil.com/fondo/14717.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-family: "Oswald", sans-serif;
@@ -44,11 +41,13 @@ h1 {
   margin: 5px;
 }
 
-.name {
+.text {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+
 
 #spinner {
   display: none;
@@ -87,4 +86,5 @@ h1 {
   position: absolute;
   top: 0%;
 }
+
 

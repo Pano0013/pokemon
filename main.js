@@ -44,12 +44,18 @@ function createPokemon(pokemon) {
   number.textContent = `#${pokemon.id.toString().padStart(3, 0)}`;
 
   const name = document.createElement("p");
-  name.classList.add("name");
+  name.classList.add("text");
   name.textContent = pokemon.name;
+
+  const type = document.createElement("p");
+  type.classList.add("text");
+  type.textContent=pokemon.types.map( element => element.type.name );;
+ 
 
   card.appendChild(spriteContainer);
   card.appendChild(number);
   card.appendChild(name);
+  card.appendChild(type);
 
   const cardBack = document.createElement("div");
   cardBack.classList.add("pokemon-block-back");
