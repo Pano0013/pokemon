@@ -1,3 +1,8 @@
+.{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: url("https://fondosmil.com/fondo/14717.jpg") no-repeat center top ;
   background-size: cover;
@@ -24,7 +29,7 @@ h1 {
 .pokemon-block {
   border-radius: 10px;
   padding: 10px;
-  background-color: white;
+  backdrop-filter: blur(12px);
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 }
 
